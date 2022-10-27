@@ -1,0 +1,25 @@
+main {
+	display: flex;
+	margin-top: 5rem;
+
+	.buscador {
+		margin-left: 10rem;
+	}
+	.siguiente {
+		background-color: aliceblue;
+		width: 10rem;
+		height: 3rem;
+		border-radius: 5px;
+		position: absolute;
+		left: 50vw;
+		bottom: 10vh;
+	}
+	.cardsList {
+	display: grid;
+	font-size: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+	width: 60vw;
+	margin: 0 auto;
+	}
+}

@@ -1,0 +1,17 @@
+@import'main';
+@import'card';
+@import'header';
+@import'info';
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: rgb(235, 235, 235);
+}
