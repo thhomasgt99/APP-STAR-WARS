@@ -14,8 +14,18 @@ export function Home() {
 	}
 
 	function siguiete() {
-		setFlag(flag + 1)
-		fetchResults(flag)
+		if(flag < 10){
+			setFlag(flag + 1)
+			fetchResults(flag)
+		}
+		
+	}
+
+	function anterior() {
+		if(flag > 1){
+			setFlag(flag - 1)
+			fetchResults(flag)
+		}
 	}
 
 	function buscar(busqueda) {
@@ -51,6 +61,7 @@ export function Home() {
 				}
 			</div>
 			<button className='siguiente' onClick={siguiete}>Siguiente: {flag}</button>
+			<button className='anterior' onClick={anterior}>anterior: {flag}</button>
 		</main>
 	)
 }
