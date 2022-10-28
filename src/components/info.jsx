@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export function Info(){
 
@@ -16,7 +17,7 @@ export function Info(){
 			<p>eye color: {info.eye_color}</p>
 			<p>birth year: {info.birth_year}</p>
 			<hr />
-			<a href="/">volver</a>
+			<Link to="/">volver</Link>
 		</div>
 	)
 }
